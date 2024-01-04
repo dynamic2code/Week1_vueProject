@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import HeaderComponent from '../components/HeaderComponent.vue'
+import FirstRowComponent from '@/components/FirstRowComponent.vue';
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <HeaderComponent />
+    <FirstRowComponent/>
   </main>
 </template>
