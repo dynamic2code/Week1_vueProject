@@ -5,11 +5,35 @@
             <span>Whether you prefer trading on your desk or on the go -olymp has got you covered</span>
 
             <div class="divided">
-                <div class="half">
-
+                <div class="half" id="right">
+                    <PhoneComponent></PhoneComponent>
                 </div>
-                <div class="half">
+                <div class="half" id="left">
+                    <div id="details_and_stars">
+                        <span>The custom build has been updated to any device you may choose to use and the transition is 100% seamless</span>
+                    </div>
+                    <div id="shadowed">
+                        <div >
+                            <div>
+                                <span class="heading2">5.0</span>
+                                <span>
+                                    <img class="icon" src="" alt="">
+                                    <img src="@/assets/images/star-fill.png" alt="">
+                                    <img src="@/assets/images/star-fill.png" alt="">
+                                    <img src="@/assets/images/star-fill.png" alt="">
+                                    <img src="@/assets/images/star-fill.png" alt="">
+                                    <img src="@/assets/images/star-fill.png" alt="">
+                                </span>                                
+                            </div>
+                            <div>
+                                <span>app rating</span>
+                            </div>
+                        </div>
 
+                        <div>
+                            <span>This is the best trading platform you'll ever use</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -69,6 +93,7 @@
 </template>
 
 <script setup>
+import PhoneComponent from './PhoneComponent.vue';
 </script>
 
 <style scoped>
@@ -135,5 +160,29 @@
 .platform_text{
     display: flex;
     flex-direction: column;
+}
+#left{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#right{
+    background-color: blueviolet;
+}
+.divided{
+
+}
+#details_and_stars{
+    width: 60%;
+    height: auto;
+}
+#shadowed{
+    background-color: #2B3440;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
 }
 </style>

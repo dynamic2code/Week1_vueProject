@@ -1,4 +1,5 @@
 @import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 #app {
 
@@ -45,8 +46,8 @@ button{
 }
 
 .heading1{
-  font-size:3em;
-  font-weight: 600;
+  font-size:6em;
+  font-weight: 900;
 }
 .heading2{
   font-size: 1.5em;
