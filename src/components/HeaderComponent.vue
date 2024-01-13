@@ -2,6 +2,9 @@
     <div class="holder" id="">
         <div class="container">
             <div id="navigate">
+                <router-link to="/" class="navigate_item">
+                    <img src="@/assets/images/logo.png" alt="">
+                </router-link>  
                 <div class="navigate_item">
                     <span>About the company</span>
                 </div>

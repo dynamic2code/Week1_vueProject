@@ -6,39 +6,44 @@
 
             <div class="divided">
                 <div class="half" id="right">
-                    <PhoneComponent></PhoneComponent>
+                    <img class="phone" src="@/assets/images/Mobile_.png" alt="">
                 </div>
                 <div class="half" id="left">
                     <div id="details_and_stars">
                         <span>The custom build has been updated to any device you may choose to use and the transition is 100% seamless</span>
                     </div>
                     <div id="shadowed">
-                        <div >
+
+                        <div id="first_row">
+                            <span class="heading2" style="margin-right: 10%;">5.0</span>
                             <div>
-                                <span class="heading2">5.0</span>
-                                <span>
-                                    <img class="icon" src="" alt="">
-                                    <img src="@/assets/images/star-fill.png" alt="">
-                                    <img src="@/assets/images/star-fill.png" alt="">
-                                    <img src="@/assets/images/star-fill.png" alt="">
-                                    <img src="@/assets/images/star-fill.png" alt="">
-                                    <img src="@/assets/images/star-fill.png" alt="">
-                                </span>                                
+                                <div id="stars">
+                                    <span>
+                                        <img class="icon" src="" alt="">
+                                        <img src="@/assets/images/star-fill.png" alt="">
+                                        <img src="@/assets/images/star-fill.png" alt="">
+                                        <img src="@/assets/images/star-fill.png" alt="">
+                                        <img src="@/assets/images/star-fill.png" alt="">
+                                        <img src="@/assets/images/star-fill.png" alt="">
+                                    </span>                                     
+                                </div>
+ 
+                                <div>
+                                    <span>app rating</span>
+                                </div>                             
                             </div>
-                            <div>
-                                <span>app rating</span>
-                            </div>
+
                         </div>
 
                         <div>
-                            <span>This is the best trading platform you'll ever use</span>
+                            <span>This is the best trading platform you'll ever use. We guarantee you that.</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="buttons">
-                <div class="downloads">
+                <div class="downloads" id="desktop">
                     <span>Desktop</span>
                     <div class="holder_buttons">
                         <div class="platform">
@@ -65,7 +70,7 @@
 
                 </div>
 
-                <div class="downloads">
+                <div class="downloads" id="mobile">
                     <span>Mobile</span>
                     <div class="holder_buttons">
                         <div class="platform">
@@ -74,18 +79,18 @@
 
                         <div class="platform">
                             <img src="@/assets/images/google-play.png" alt="">
-                        </div>                        
+                        </div>  
+                        <div class="downloads">
+                            <span>App downloads</span>
+                            <div>
+                                <span class="heading2">12M+</span>
+                            </div>
+                        </div>                                                 
                     </div>
 
-
+                 
                 </div>
 
-                <div class="downloads">
-                    <span>App downloads</span>
-                    <div>
-                        <span class="heading2">12M+</span>
-                    </div>
-                </div>
 
             </div>
         </div>
@@ -93,7 +98,7 @@
 </template>
 
 <script setup>
-import PhoneComponent from './PhoneComponent.vue';
+// import PhoneComponent from './PhoneComponent.vue';
 </script>
 
 <style scoped>
@@ -107,7 +112,7 @@ import PhoneComponent from './PhoneComponent.vue';
 .container{
     display: flex;
     flex-direction: column;
-    height: 70%;
+    height: auto;
   /* background-color: blueviolet; */
 }
 .container> *{
@@ -116,19 +121,19 @@ import PhoneComponent from './PhoneComponent.vue';
 .divided{
     display: flex;
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 .half{
     width: 50%;
-    height: 100%;
+    height: auto;
     /* background-color: aquamarine; */
 }
 .buttons{
     width: 100%;
     height: 10%;
-    /* background-color: black; */
+    background-color: black;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .buttons img{
     cursor: pointer;
@@ -142,6 +147,16 @@ import PhoneComponent from './PhoneComponent.vue';
     flex-direction: column;
     /* background-color: aquamarine; */
 }
+#desktop{
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    
+}
+#mobile{
+    display: flex;
+    justify-content: space-between;
+}
 .holder_buttons{
     display: flex;
 }
@@ -153,9 +168,10 @@ import PhoneComponent from './PhoneComponent.vue';
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #2B3440;
     padding: 1%;
+    width: auto;
 }
 .platform_text{
     display: flex;
@@ -165,11 +181,16 @@ import PhoneComponent from './PhoneComponent.vue';
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 #right{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .divided{
 
@@ -177,12 +198,31 @@ import PhoneComponent from './PhoneComponent.vue';
 #details_and_stars{
     width: 60%;
     height: auto;
+    margin-bottom: 10%;
 }
 #shadowed{
     background-color: #2B3440;
     width: 60%;
     height: auto;
-    padding: 10px;
+    padding: 30px;
     border-radius: 20px;
+}
+
+.phone{
+    /* background-color: rgb(13, 146, 146); */
+    display: block;
+    height: auto;
+    width: 300px;
+}
+#first_row{
+    display: flex;
+    /* background-color: aqua; */
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 2%;
+}
+#stars{
+    /* margin-right:2%; */
+    /* background-color: blue; */
 }
 </style>

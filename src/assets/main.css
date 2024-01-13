@@ -23,23 +23,29 @@ button{
   background-color: var(--vt-c-blue);
   width: auto;
   height: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 .secondary_button{
   background-color: var(--vt-c-minor-button);
-  width: auto;
+  width: 166px;
   height: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 .half{
   width: 50%;
@@ -50,6 +56,6 @@ button{
   font-weight: 900;
 }
 .heading2{
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: 600;
 }
