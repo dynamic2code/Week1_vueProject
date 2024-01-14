@@ -17,12 +17,13 @@
             </div>
 
             <div id="buttons">
-                <div class="secondary_button">
+                <router-link to="/sign-in" class="secondary_button">
                     <span>Sign-in</span>
-                </div>
-                <div class="primary_button">
+                </router-link>  
+
+                <router-link to="/register" class="primary_button">
                     <span>Registration</span>
-                </div>                
+                </router-link>              
             </div>
         </div>
     </div>

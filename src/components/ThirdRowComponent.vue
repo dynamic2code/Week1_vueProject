@@ -131,7 +131,7 @@
 .buttons{
     width: 100%;
     height: 10%;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     /* justify-content: space-around; */
 }
@@ -170,8 +170,10 @@
     align-items: center;
     border-radius: 30px;
     background-color: #2B3440;
-    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
     width: auto;
+    height: auto;
 }
 .platform_text{
     display: flex;
