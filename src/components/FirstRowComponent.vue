@@ -78,5 +78,9 @@
   right: 0;
   border-radius: 50%;
 }
-
+@media (max-width: 784px) {
+  .container{
+    flex-direction: column;
+  }
+}
 </style>

@@ -16,6 +16,7 @@ button{
 .container{
   width: 90%;
 }
+
 .holder {
   width: 100%;
 }
@@ -32,6 +33,7 @@ button{
   align-items: center;
   margin-right: 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
 .secondary_button{
   background-color: var(--vt-c-minor-button);
@@ -46,6 +48,7 @@ button{
   align-items: center;
   margin-right: 10px;
   cursor: pointer;
+  border-radius: 20px;
 }
 .half{
   width: 50%;
@@ -58,4 +61,22 @@ button{
 .heading2{
   font-size: 3em;
   font-weight: 600;
+}
+.heading3{
+  font-size: 1em;
+  font-weight: 600;
+}
+@media (max-width: 784px) {
+  .heading1{
+    font-size:3em;
+    font-weight: 900;
+  }
+  .heading2{
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .heading3{
+    font-size: 0.5em;
+    font-weight: 600;
+  }
 }
