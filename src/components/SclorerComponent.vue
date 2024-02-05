@@ -1,10 +1,15 @@
 <template>
     <div class="" id="scorer">
-        <CompanyOverViewComponent :companies="companies"></CompanyOverViewComponent>
+        <Marquee :pauseOnHover="true" :fade="true">
+            <CompanyOverViewComponent :companies="companies"></CompanyOverViewComponent>
+        </Marquee>
+
     </div>
 </template>
 
 <script setup>
+import { Marquee } from "@selemondev/vue3-marquee";
+import "@selemondev/vue3-marquee/dist/style.css"
 import CompanyOverViewComponent from './CompanyOverViewComponent.vue';
 
 const companies = [
